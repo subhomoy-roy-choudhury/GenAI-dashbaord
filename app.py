@@ -15,8 +15,7 @@ def about_page():
 def contact_page():
     st.title("Contact Page")
     st.write("You can contact us here.")
-  
-
+    
 def main():
     state = st.session_state.get("state", {"page": "Main Page"})
 
@@ -29,7 +28,6 @@ def main():
 
     st.sidebar.title("Navigation")
     selected_page = st.sidebar.selectbox("Go to", ["Main Page", "About", "Contact"])
-    button_clicked = larger_button("Click me!")
     # selected_page = st.sidebar.radio("Go to", list(pages.keys()))
 
     # Render the selected page
